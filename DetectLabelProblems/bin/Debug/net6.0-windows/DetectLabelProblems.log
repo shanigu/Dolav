@@ -1,0 +1,282 @@
+02/02/2023 17:55:15: Started comparing C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-51 to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11
+02/02/2023 17:55:15: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-51/Image_001.jpg
+02/02/2023 17:55:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-51/Image_002.jpg
+02/02/2023 17:56:07: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-51
+02/02/2023 17:58:09: Started comparing C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-51 to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11
+02/02/2023 17:58:09: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-51/Image_001.jpg
+02/02/2023 17:58:35: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-51/Image_002.jpg
+02/02/2023 17:58:59: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-51
+06/02/2023 10:03:05: Image Image_001.jpg not found in new folder
+06/02/2023 10:03:05: Image Image_002.jpg not found in new folder
+06/02/2023 10:04:53: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/ Image_001.jpg
+06/02/2023 10:04:53: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/ Image_002.jpg
+06/02/2023 10:04:53: Exception caught: Parameter is not valid.
+06/02/2023 10:04:53: Exception caught: Parameter is not valid.
+06/02/2023 10:04:53: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/ Image_001.jpg. No errors detected.
+06/02/2023 10:04:53: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/ Image_002.jpg. No errors detected.
+06/02/2023 10:06:03: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-51 - Copy/ Image_001.jpg
+06/02/2023 10:06:53: Exception caught: Parameter is not valid.
+06/02/2023 10:06:53: Exception caught: Parameter is not valid.
+06/02/2023 10:06:53: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-51 - Copy/ Image_001.jpg. No errors detected.
+06/02/2023 10:06:53: Exception caught: Parameter is not valid.
+06/02/2023 10:06:53: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-51 - Copy/ Image_002.jpg. No errors detected.
+06/02/2023 10:06:54: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-51 - Copy - Copy/ Image_001.jpg
+06/02/2023 10:06:54: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-51 - Copy - Copy/ Image_002.jpg
+06/02/2023 10:08:02: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_001.jpg
+06/02/2023 10:08:02: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_002.jpg
+06/02/2023 10:13:07: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_002.jpg. No errors detected.
+06/02/2023 10:13:46: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_001.jpg. No errors detected.
+06/02/2023 10:31:48: New folder detector started
+06/02/2023 10:31:59: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:31:59: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:25: New folder detector started
+06/02/2023 10:34:29: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:29: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:41: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:44: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:45: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:50: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:50: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:50: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:50: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:54: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:54: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:34:54: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:54: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:56: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:34:56: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:00: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:35:01: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:06: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:35:10: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:35:10: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:13: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:35:15: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:15: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:20: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:20: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:21: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:35:21: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:35:25: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:27: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:35:35: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:35:35: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:39: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:35:40: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:40: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:43: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:35:47: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:47: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:53: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:35:53: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:35:53: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:36:01: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:36:05: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:36:11: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:36:12: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:36:12: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:36:16: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:36:20: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:36:20: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:36:21: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:36:25: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:36:31: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:36:31: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:36:36: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:36:38: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:36:43: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:36:43: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:37:40: New folder detector started
+06/02/2023 10:37:46: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:37:46: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:37:58: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:37:58: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 10:37:58: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:37:58: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 10:39:11: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 10:39:11: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg
+06/02/2023 10:39:25: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 10:39:25: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 10:39:25: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg
+06/02/2023 10:39:25: Comparing files C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg
+06/02/2023 10:39:29: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg. No errors detected.
+06/02/2023 10:40:39: Image Image_001.jpg not found in new folder
+06/02/2023 10:40:39: Image Image_002.jpg not found in new folder
+06/02/2023 10:43:55: New folder detector started
+06/02/2023 10:44:09: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 10:44:09: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg
+06/02/2023 10:44:20: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 10:44:20: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 10:44:21: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg
+06/02/2023 10:44:21: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg
+06/02/2023 10:47:31: New folder detector started
+06/02/2023 10:48:03: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 10:48:03: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg
+06/02/2023 10:48:15: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 10:48:15: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 10:48:15: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg
+06/02/2023 10:48:15: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg
+06/02/2023 10:50:48: New folder detector started
+06/02/2023 10:51:04: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 10:51:04: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg
+06/02/2023 10:53:48: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_001.jpg
+06/02/2023 10:53:48: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_002.jpg
+06/02/2023 10:56:18: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg. No errors detected.
+06/02/2023 10:56:58: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 10:59:00: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_002.jpg. No errors detected.
+06/02/2023 10:59:38: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_001.jpg
+06/02/2023 11:36:19: New folder detector started
+06/02/2023 11:36:25: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2 - Copy/Image_001.jpg
+06/02/2023 11:36:25: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2 - Copy/Image_002.jpg
+06/02/2023 11:36:37: Exception caught: A generic error occurred in GDI+.
+06/02/2023 11:36:37: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2 - Copy/Image_001.jpg
+06/02/2023 11:36:44: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2 - Copy/Image_002.jpg
+06/02/2023 11:39:15: Image Image_002.jpg not found in new folder
+06/02/2023 11:39:15: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2 - Copy - Copy/Image_001.jpg
+06/02/2023 11:41:15: New folder detector started
+06/02/2023 11:41:27: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 11:41:27: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg
+06/02/2023 11:42:11: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg. No errors detected.
+06/02/2023 11:45:30: New folder detector started
+06/02/2023 11:45:35: Image Image_002.jpg not found in new folder
+06/02/2023 11:45:35: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy/Image_001.jpg
+06/02/2023 11:49:34: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy/Image_001.jpg. No errors detected.
+06/02/2023 11:49:45: Image Image_002.jpg not found in new folder
+06/02/2023 11:49:45: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy - Copy/Image_001.jpg
+06/02/2023 11:51:08: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy - Copy/Image_001.jpg. No errors detected.
+06/02/2023 11:51:43: Image Image_002.jpg not found in new folder
+06/02/2023 11:51:43: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy - Copy - Copy/Image_001.jpg
+06/02/2023 11:53:40: New folder detector started
+06/02/2023 11:53:45: Image Image_002.jpg not found in new folder
+06/02/2023 11:53:45: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy/Image_001.jpg
+06/02/2023 11:54:03: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy/Image_001.jpg. No errors detected.
+06/02/2023 11:54:27: Image Image_002.jpg not found in new folder
+06/02/2023 11:54:27: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy (2)/Image_001.jpg
+06/02/2023 11:54:42: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy (2)/Image_001.jpg. No errors detected.
+06/02/2023 11:55:16: New folder detector started
+06/02/2023 11:55:20: Image Image_002.jpg not found in new folder
+06/02/2023 11:55:20: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy (3)/Image_001.jpg
+06/02/2023 11:55:37: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy (3)/Image_001.jpg
+06/02/2023 12:05:40: New folder detector started
+06/02/2023 12:05:44: Image Image_002.jpg not found in new folder
+06/02/2023 12:05:44: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy/Image_001.jpg
+06/02/2023 12:08:09: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy/Image_001.jpg
+06/02/2023 12:10:31: New folder detector started
+06/02/2023 12:10:35: Image Image_002.jpg not found in new folder
+06/02/2023 12:10:35: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy/Image_001.jpg
+06/02/2023 12:10:53: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1 - Copy/Image_001.jpg
+06/02/2023 12:11:10: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_001.jpg
+06/02/2023 12:11:10: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_002.jpg
+06/02/2023 12:11:26: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_002.jpg. No errors detected.
+06/02/2023 12:11:27: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_001.jpg
+06/02/2023 12:14:18: New folder detector started
+06/02/2023 12:14:22: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\White\Image1.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\White - Error/Image1.jpg
+06/02/2023 12:18:01: New folder detector started
+06/02/2023 12:18:47: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\White\Image1.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\White - Error/Image1.jpg
+06/02/2023 12:18:50: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\White - Error/Image1.jpg
+06/02/2023 12:20:11: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\White\Image1.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\White - Error - Copy/Image1.jpg
+06/02/2023 12:20:15: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\White - Error - Copy/Image1.jpg. No errors detected.
+06/02/2023 12:20:47: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\White\Image1.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\White - Error - Copy (2)/Image1.jpg
+06/02/2023 12:20:51: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\White - Error - Copy (2)/Image1.jpg. No errors detected.
+06/02/2023 13:51:07: New folder detector started
+06/02/2023 13:51:14: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_001.jpg
+06/02/2023 13:51:15: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_002.jpg
+06/02/2023 13:51:42: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_001.jpg
+06/02/2023 13:51:42: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_002.jpg
+06/02/2023 13:53:13: New folder detector started
+06/02/2023 13:53:24: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_001.jpg
+06/02/2023 13:53:24: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_002.jpg
+06/02/2023 13:53:42: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_002.jpg. No errors detected.
+06/02/2023 13:53:43: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_001.jpg. No errors detected.
+06/02/2023 13:54:02: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 13:54:02: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg
+06/02/2023 13:54:20: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg. No errors detected.
+06/02/2023 13:54:21: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 13:54:41: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_001.jpg
+06/02/2023 13:54:41: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_002.jpg
+06/02/2023 13:54:59: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_002.jpg. No errors detected.
+06/02/2023 13:54:59: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_001.jpg
+06/02/2023 14:07:39: New folder detector started
+06/02/2023 14:08:01: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_001.jpg
+06/02/2023 14:08:01: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_002.jpg
+06/02/2023 14:08:48: New folder detector started
+06/02/2023 14:09:04: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_001.jpg
+06/02/2023 14:09:04: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_002.jpg
+06/02/2023 14:09:26: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_002.jpg. No errors detected.
+06/02/2023 14:09:28: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_001.jpg. No errors detected.
+06/02/2023 14:09:37: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 14:09:37: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg
+06/02/2023 14:10:00: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_002.jpg. No errors detected.
+06/02/2023 14:10:02: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error1/Image_001.jpg
+06/02/2023 14:10:20: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_001.jpg
+06/02/2023 14:10:20: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_002.jpg
+06/02/2023 14:10:41: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_002.jpg. No errors detected.
+06/02/2023 14:10:42: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error2/Image_001.jpg
+06/02/2023 14:15:01: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error3/Image_001.jpg
+06/02/2023 14:15:01: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error3/Image_002.jpg
+06/02/2023 14:15:23: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error3/Image_002.jpg. No errors detected.
+06/02/2023 14:15:25: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error3/Image_001.jpg. No errors detected.
+06/02/2023 14:16:29: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error4/Image_001.jpg
+06/02/2023 14:16:29: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error4/Image_002.jpg
+06/02/2023 14:16:52: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error4/Image_002.jpg. No errors detected.
+06/02/2023 14:16:53: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error4/Image_001.jpg. No errors detected.
+06/02/2023 14:17:28: Image Image_002.jpg not found in new folder
+06/02/2023 14:17:28: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error5/Image_001.jpg
+06/02/2023 14:17:49: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error5/Image_001.jpg. No errors detected.
+06/02/2023 14:37:14: New folder detector started
+06/02/2023 14:37:25: Image Image_002.jpg not found in new folder
+06/02/2023 14:37:25: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error5/Image_001.jpg
+06/02/2023 14:37:43: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error5/Image_001.jpg. No errors detected.
+06/02/2023 14:40:33: Image Image_002.jpg not found in new folder
+06/02/2023 14:40:33: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error3/Image_001.jpg
+06/02/2023 14:44:11: New folder detector started
+06/02/2023 14:44:33: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error3/Image_001.jpg
+06/02/2023 14:44:33: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error3/Image_002.jpg
+06/02/2023 14:45:43: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error3/Image_002.jpg. No errors detected.
+06/02/2023 14:45:44: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error3/Image_001.jpg
+06/02/2023 14:53:42: New folder detector started
+06/02/2023 14:53:50: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error3/Image_001.jpg
+06/02/2023 14:53:50: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error3/Image_002.jpg
+06/02/2023 14:55:55: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error3/Image_001.jpg
+06/02/2023 14:55:59: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Error3/Image_002.jpg. No errors detected.
+06/02/2023 15:36:23: New folder detector started
+06/02/2023 15:36:32: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_001.jpg
+06/02/2023 15:36:32: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_002.jpg
+06/02/2023 15:37:17: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_001.jpg
+06/02/2023 15:37:20: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_002.jpg
+06/02/2023 15:39:29: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 15:39:29: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 15:40:13: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_001.jpg
+06/02/2023 15:40:16: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50 - Copy/Image_002.jpg
+06/02/2023 15:41:23: New folder detector started
+06/02/2023 15:41:42: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_001.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_001.jpg
+06/02/2023 15:41:42: Comparing images C:\Users\shanigu\Downloads\Labels\2023-01-31\14-26-11\Image_002.jpg to C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_002.jpg
+06/02/2023 15:41:56: Done checking C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_001.jpg. No errors detected.
+06/02/2023 15:42:27: Errors detected at: C:\Users\shanigu\Downloads\Labels\2023-01-31\14-28-50/Image_002.jpg
