@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetectLabelProblems", "DetectLabelProblems.csproj", "{E1932041-B8EF-4BCF-9F60-1E6512C9FE68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetectLabelProblems", "DetectLabelProblems.csproj", "{8AA49C98-F4C9-4BA4-AEA8-4097C055A164}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E1932041-B8EF-4BCF-9F60-1E6512C9FE68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1932041-B8EF-4BCF-9F60-1E6512C9FE68}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1932041-B8EF-4BCF-9F60-1E6512C9FE68}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1932041-B8EF-4BCF-9F60-1E6512C9FE68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AA49C98-F4C9-4BA4-AEA8-4097C055A164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AA49C98-F4C9-4BA4-AEA8-4097C055A164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AA49C98-F4C9-4BA4-AEA8-4097C055A164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AA49C98-F4C9-4BA4-AEA8-4097C055A164}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1BB7AD0A-2BB5-4FC9-9F6F-EDBA8A1AD1AF}
+		SolutionGuid = {8AD91B6A-BDC6-416D-9D75-F637853718C7}
 	EndGlobalSection
 EndGlobal

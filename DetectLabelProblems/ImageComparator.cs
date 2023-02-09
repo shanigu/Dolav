@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography.Pkcs;
 using System.Text;
@@ -27,14 +28,15 @@ namespace DetectLabelProblems
         public static int WhiteThreshold { get; set; }
         public static int SmoothingArea { get; set; }
 
-        public Rectangle ReferenceRectangle { get; set; }
-        public bool ReferenceRectangleMarked { get; set; }
+        public static Rectangle ReferenceRectangle { get; set; }
+        public static bool ReferenceRectangleMarked { get; set; }
 
+        public static bool AdjustBrightness { get; set; }
 
         public ImageComparator()
         {
             Errors = new List<Rectangle>();
-            ReferenceRectangleMarked = false;
+            //ReferenceRectangleMarked = false;
         }
 
         public void Run(object sender, DoWorkEventArgs e)
@@ -62,12 +64,16 @@ namespace DetectLabelProblems
             Message = "Comparing images " + sReferenceImage + " to " + sNewImage;
             if (WorkerReportsProgress)
                 ReportProgress(0);
+            else
+                Console.WriteLine(Message);
 
            
 
             FileInfo fiNewImage = new FileInfo(sNewImage);
             string sPath = fiNewImage.Directory.FullName + @"\Rects\";
             string sName = sPath + fiNewImage.Name + ".";
+            if(Directory.Exists(sPath))
+                Directory.Delete(sPath, true);
             Directory.CreateDirectory(sPath);
 
             Bitmap bmp1 = new Bitmap(sReferenceImage);
@@ -76,19 +82,30 @@ namespace DetectLabelProblems
             DirectBitmap db1 = new DirectBitmap(bmp1);
             DirectBitmap db2 = new DirectBitmap(bmp2);
 
+            DirectBitmap db1Adjusted = db1;
+            DirectBitmap db2Adjusted = db2;
+
+            if (AdjustBrightness)
+            {
+                db1Adjusted = db1.AdjustBrightness();
+                db2Adjusted = db2.AdjustBrightness();
+                db1Adjusted.Bitmap.Save(sName + "adjusted1.jpg");
+                db2Adjusted.Bitmap.Save(sName + "adjusted2.jpg");
+            }
+
 
             //BUGBUG; defining smaller region here due to reflections - need to revise
             GrayBitmap gray1 = null;
             if(ReferenceRectangleMarked)
-                gray1 = new GrayBitmap(db1, ReferenceRectangle);
+                gray1 = new GrayBitmap(db1Adjusted, ReferenceRectangle);
             else
-                 gray1 = new GrayBitmap(db1);
+                 gray1 = new GrayBitmap(db1Adjusted);
             gray1.Save(sName + "original1.jpg");
             GrayBitmap gray2 = null;
             if (ReferenceRectangleMarked)
-                gray2 = new GrayBitmap(db2, ReferenceRectangle);
+                gray2 = new GrayBitmap(db2Adjusted, ReferenceRectangle);
             else
-                gray2 = new GrayBitmap(db2);
+                gray2 = new GrayBitmap(db2Adjusted);
             gray2.Save(sName + "original2.jpg");
             
             Pipeline pipeline1 = new Pipeline();
@@ -118,11 +135,15 @@ namespace DetectLabelProblems
                 GrayRect r2 = lGrayRects2[i];
 
                 Debug.WriteLine("Rect " + i + "/" + lGrayRects1.Count + ": " + r1.XStart + "," + r1.YStart + ": " + r1.NonNeutralPoints.Count);
+                int iPercetage = (int)((100 * i) / lGrayRects1.Count);
                 if (WorkerReportsProgress)
                 {
-                    int iPercetage = (int)((100 * i) / lGrayRects1.Count);
                     Message = "";
                     ReportProgress(iPercetage);
+                }
+                else
+                {
+                    Console.Write("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bCompleted: " + iPercetage + "%");
                 }
 
 
@@ -142,9 +163,10 @@ namespace DetectLabelProblems
                     r1.Save(sName + "r1_" + r1.XStart + "_" + r1.YStart + ".jpg");
                     r2.Save(sName + "r2_" + r1.XStart + "_" + r1.YStart + ".jpg");
                     Errors.Add(new Rectangle(r1.XStart + ReferenceRectangle.X, r1.YStart + ReferenceRectangle.Y, r1.Width, r1.Height));
-                   
                 }
             }
+            Console.WriteLine("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bCompleted: 100%");
+            Console.WriteLine("Done comparing images, detected " + Errors.Count + " problematic areas"); 
 
             Errors = Merge(Errors);
             

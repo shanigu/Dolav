@@ -1,0 +1,11 @@
+C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0-windows\DetectLabelProblemsUI.csproj.AssemblyReference.cache
+C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0-windows\DetectLabelProblems.DetectionUI.resources
+C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0-windows\DetectLabelProblems.DisplayProblems.resources
+C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0-windows\DetectLabelProblemsUI.Properties.Resources.resources
+C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0-windows\DetectLabelProblems.ReferenceMarker.resources
+C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0-windows\DetectLabelProblems.Settings.resources
+C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0-windows\DetectLabelProblemsUI.csproj.GenerateResource.cache
+C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0-windows\DetectLabelProblemsUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0-windows\DetectLabelProblemsUI.AssemblyInfoInputs.cache
+C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0-windows\DetectLabelProblemsUI.AssemblyInfo.cs
+C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0-windows\DetectLabelProblemsUI.csproj.CoreCompileInputs.cache
