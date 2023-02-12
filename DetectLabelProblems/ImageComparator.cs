@@ -76,6 +76,8 @@ namespace DetectLabelProblems
                 Directory.Delete(sPath, true);
             Directory.CreateDirectory(sPath);
 
+            Console.WriteLine("Loading images");
+
             Bitmap bmp1 = new Bitmap(sReferenceImage);
             Bitmap bmp2 = new Bitmap(sNewImage);
             
@@ -87,6 +89,7 @@ namespace DetectLabelProblems
 
             if (AdjustBrightness)
             {
+                Console.WriteLine("Adjusting brightness");
                 db1Adjusted = db1.AdjustBrightness();
                 db2Adjusted = db2.AdjustBrightness();
                 db1Adjusted.Bitmap.Save(sName + "adjusted1.jpg");
@@ -94,7 +97,8 @@ namespace DetectLabelProblems
             }
 
 
-            //BUGBUG; defining smaller region here due to reflections - need to revise
+
+            Console.WriteLine("Converting to grayscale");
             GrayBitmap gray1 = null;
             if(ReferenceRectangleMarked)
                 gray1 = new GrayBitmap(db1Adjusted, ReferenceRectangle);
@@ -107,7 +111,8 @@ namespace DetectLabelProblems
             else
                 gray2 = new GrayBitmap(db2Adjusted);
             gray2.Save(sName + "original2.jpg");
-            
+
+            Console.WriteLine("Smoothing and binarizng");
             Pipeline pipeline1 = new Pipeline();
             pipeline1.WriteIntermediateImages = true;
             pipeline1.AddStep(gb => gb.SmoothMedian(SmoothingArea / 2), sName + "smoothed1.jpg");
@@ -123,12 +128,14 @@ namespace DetectLabelProblems
             pipeline2.Apply(gray2);
             gray2 = pipeline2.Output;
 
+
+            Console.WriteLine("Splitting image to rectangles");
             List<GrayRect> lGrayRects1 = ComputeRects(gray1, RectangleSize);
             List<GrayRect> lGrayRects2 = ComputeRects(gray2, RectangleSize);
 
             Dictionary<string, double> diffs = new Dictionary<string, double>();
 
-
+            Console.WriteLine("Started comparing rectangles");
             for (int i = 0; i < lGrayRects1.Count; i++)
             {
                 GrayRect r1 = lGrayRects1[i];
@@ -143,7 +150,8 @@ namespace DetectLabelProblems
                 }
                 else
                 {
-                    Console.Write("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bCompleted: " + iPercetage + "%");
+                    Console.Write("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b" + "" +
+                        "Completed: " + iPercetage + "%, Errors: " + Errors.Count);
                 }
 
 
@@ -165,10 +173,12 @@ namespace DetectLabelProblems
                     Errors.Add(new Rectangle(r1.XStart + ReferenceRectangle.X, r1.YStart + ReferenceRectangle.Y, r1.Width, r1.Height));
                 }
             }
-            Console.WriteLine("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bCompleted: 100%");
-            Console.WriteLine("Done comparing images, detected " + Errors.Count + " problematic areas"); 
-
+            
+            Console.WriteLine("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b" + "" +
+                "Completed: " + 100 + "%, Errors: " + Errors.Count);
+            Console.WriteLine("Merging rectangles with errors");
             Errors = Merge(Errors);
+            Console.WriteLine("Done comparing images, detected " + Errors.Count + " problematic areas"); 
             
 
             bmp1.Dispose();

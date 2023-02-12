@@ -5,9 +5,9 @@ using System.Drawing;
 
 try
 {
-    if (args.Length < 2)
+    if (args.Length < 3)
     {
-        Console.WriteLine("Usage: DetectLabelProblems reference_image inspected_image [config_file]");
+        Console.WriteLine("Usage: DetectLabelProblems reference_image inspected_image result_file [config_file]");
         Environment.Exit(-1);
     }
     if (!File.Exists(args[0]))
@@ -29,21 +29,21 @@ try
     ImageComparator.SmoothingArea = 5;
     ImageComparator.RectangleSize = 300;
     ImageComparator.AdjustBrightness = true;
+    ImageComparator.ErrorDiffThreshold = 100;
 
 
 
-
-    if (args.Length > 2)
+    if (args.Length > 3)
     {
-        if (File.Exists(args[2]))
+        if (File.Exists(args[3]))
         {
-            using (StreamReader sr = new StreamReader(args[2]))
+            using (StreamReader sr = new StreamReader(args[3]))
             {
                 ImageComparator.ReferenceRectangleMarked = false;
                 while (!sr.EndOfStream)
                 {
                     string sLine = sr.ReadLine();
-                    string[] aLine = sLine.Split('=');
+                    string[] aLine = sLine.Split(new char[] { '=', ':' });
                     if (aLine[0].StartsWith("WhiteThreshold"))
                     {
                         ImageComparator.WhiteThreshold = int.Parse(aLine[1]);
@@ -93,7 +93,7 @@ try
     comp.NewImage = args[1];
     comp.Run(null, null);
 
-    using (StreamWriter swResult = new StreamWriter("result.txt"))
+    using (StreamWriter swResult = new StreamWriter(args[2]))
     {
         foreach(Rectangle r in comp.Errors)
         {
