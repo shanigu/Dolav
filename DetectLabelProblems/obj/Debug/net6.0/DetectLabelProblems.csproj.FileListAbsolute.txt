@@ -18,3 +18,43 @@ C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects
 C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.pdb
 C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.genruntimeconfig.cache
 C:\Users\shanigu\OneDrive - Ben Gurion University of the Negev\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\ref\DetectLabelProblems.dll
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\DetectLabelProblems.exe
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\DetectLabelProblems.deps.json
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\DetectLabelProblems.runtimeconfig.json
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\DetectLabelProblems.dll
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\DetectLabelProblems.pdb
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.csproj.AssemblyReference.cache
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.AssemblyInfoInputs.cache
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.AssemblyInfo.cs
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.csproj.CoreCompileInputs.cache
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.csproj.CopyComplete
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.dll
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\refint\DetectLabelProblems.dll
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.pdb
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.genruntimeconfig.cache
+C:\Users\Guy\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\ref\DetectLabelProblems.dll
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\DetectLabelProblems.exe
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\DetectLabelProblems.deps.json
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\DetectLabelProblems.runtimeconfig.json
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\DetectLabelProblems.dll
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\DetectLabelProblems.pdb
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.csproj.AssemblyReference.cache
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.AssemblyInfoInputs.cache
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.AssemblyInfo.cs
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.csproj.CoreCompileInputs.cache
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.csproj.CopyComplete
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.dll
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\refint\DetectLabelProblems.dll
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.pdb
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\DetectLabelProblems.genruntimeconfig.cache
+D:\OneDrive\OneDrive - BGU\Research\projects\Dolav\Github\Dolav\DetectLabelProblems\obj\Debug\net6.0\ref\DetectLabelProblems.dll

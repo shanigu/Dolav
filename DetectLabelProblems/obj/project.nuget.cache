@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/D1JmxjPNa395XJj5YL417qVHY20B8d7QAozSp7epJ35Z0go10HJWHvuxExlB4kHGZEHNOSoaNV4GHiGbNrIPQ==",
+  "dgSpecHash": "8EpzjcKSsJYXtb0Rgsf9hye0UK3ZNdhtFQxHSvveOGj2QzGyqyyeoRlYUsQiikC74183K91Wp1lNmUO6R6lccw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\shanigu\\OneDrive - Ben Gurion University of the Negev\\Research\\projects\\Dolav\\Github\\Dolav\\DetectLabelProblems\\DetectLabelProblems.csproj",
+  "projectFilePath": "D:\\OneDrive\\OneDrive - BGU\\Research\\projects\\Dolav\\Github\\Dolav\\DetectLabelProblems\\DetectLabelProblems.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shanigu\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\shanigu\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"

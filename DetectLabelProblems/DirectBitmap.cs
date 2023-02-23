@@ -126,6 +126,8 @@ namespace DetectLabelProblems
             DirectBitmap dbAdjusted = new DirectBitmap(Width, Height);
             double[] dSumBrightness = new double[4];
             int cPixels = (Width / 4) * (Height / 4);
+
+            //go over the image and compute the brightness at the corners of the image
             for (int x = 0; x < Width; x++)
             {
                 for (int y = 0; y < Height; y++)
@@ -144,12 +146,12 @@ namespace DetectLabelProblems
                 }
             }
 
+            //find the area with the maximal brightness and the area with the minimal brightness
             int iMaxIndex = 0;
             double dMax = 0.0;
             double dMin = 1.0;
             for (int i = 0; i < 4; i++)
             {
-
                 dSumBrightness[i] /= cPixels;
                 if(dSumBrightness[i] > dMax)
                 {
@@ -169,6 +171,8 @@ namespace DetectLabelProblems
             if (iMaxIndex == 3)
                 pOrigin = new Point(Width, Height);
 
+            //go over the image and adjust the brightness with respect to the distance from the brightest corner
+            //the closer the pixel is to the origin (the brightest corner), the more we reduce the brightness
             double dMaxDistance = Math.Sqrt(Width * Width + Height * Height);
             double fMaxDecrease = 0.3;
             for (int x = 0; x < Width; x++)
@@ -253,5 +257,24 @@ namespace DetectLabelProblems
             return (c.R * 0.299f + c.G * 0.587f + c.B * 0.114f) / 256f;
         }
 
+        public void DrawRectangle(Rectangle r)
+        {
+            Color c = Color.Red;
+            for(int x = r.Left; x < r.Right; x++)
+            {
+                SetPixel(x, r.Top, c);
+                SetPixel(x, r.Top + 1, c);
+                SetPixel(x, r.Bottom, c);
+                SetPixel(x, r.Bottom - 1, c);
+            }
+            for(int y = r.Top; y<r.Bottom; y++)
+            {
+                SetPixel(r.Left, y, c);
+                SetPixel(r.Left + 1, y, c);
+                SetPixel(r.Right, y, c);
+                SetPixel(r.Right - 1, y, c);
+
+            }
+        }
     }
 }

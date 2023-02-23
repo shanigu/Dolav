@@ -2,7 +2,7 @@
   "profiles": {
     "DetectLabelProblems": {
       "commandName": "Project",
-      "commandLineArgs": "reference.jpg inspected.jpg"
+      "commandLineArgs": "reference.jpg inspected.jpg config"
     }
   }
 }

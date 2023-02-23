@@ -5,6 +5,29 @@ using System.Drawing;
 
 try
 {
+    ImageComparator.BlackThreshold = 30;
+    ImageComparator.WhiteThreshold = 170;
+    ImageComparator.MaxOffset = 25;
+    ImageComparator.ReferenceRectangle = new Rectangle(700, 1000, 3000, 1500);
+    ImageComparator.ReferenceRectangleMarked = true;
+    ImageComparator.SmoothingArea = 5;
+    ImageComparator.RectangleSize = 300;
+    ImageComparator.AdjustBrightness = false;
+    ImageComparator.ErrorDiffThreshold = 1000;
+    ImageComparator.FilterSize = 5;
+    ImageComparator.ResizeFactor = 0.5;
+
+    string sOutputFile = "results.txt";
+
+
+    ImageComparator comp = new ImageComparator();
+
+#if (DEBUG)
+    comp.ReferenceImage = "D:\\Local\\Dolav\\2023-02-21\\00-12-12\\Image_001.jpg";
+    comp.NewImage = "D:\\Local\\Dolav\\2023-02-21\\01-13-15\\Image_001.jpg";
+    sOutputFile = "D:\\Local\\Dolav\\2023-02-21\\01-13-15\\results.txt";
+
+#else
     if (args.Length < 3)
     {
         Console.WriteLine("Usage: DetectLabelProblems reference_image inspected_image result_file [config_file]");
@@ -20,16 +43,6 @@ try
         Console.WriteLine("Could not find inspected image: " + args[1]);
         Environment.Exit(-1);
     }
-
-    ImageComparator.BlackThreshold = 30;
-    ImageComparator.WhiteThreshold = 200;
-    ImageComparator.MaxOffset = 5;
-    ImageComparator.ReferenceRectangle = new Rectangle(400, 400, 1400, 1000);
-    ImageComparator.ReferenceRectangleMarked = true;
-    ImageComparator.SmoothingArea = 5;
-    ImageComparator.RectangleSize = 300;
-    ImageComparator.AdjustBrightness = true;
-    ImageComparator.ErrorDiffThreshold = 100;
 
 
 
@@ -68,9 +81,17 @@ try
                     {
                         ImageComparator.RectangleSize = int.Parse(aLine[1]);
                     }
+                    if (aLine[0].StartsWith("FilterSize"))
+                    {
+                        ImageComparator.FilterSize = int.Parse(aLine[1]);
+                    }
                     if (aLine[0].StartsWith("AdjustBrightness"))
                     {
                         ImageComparator.AdjustBrightness = bool.Parse(aLine[1]);
+                    }
+                    if (aLine[0].StartsWith("ResizeFactor"))
+                    {
+                        ImageComparator.ResizeFactor = double.Parse(aLine[1]);
                     }
                     if (aLine[0].StartsWith("ReferenceRectangle"))
                     {
@@ -84,16 +105,16 @@ try
             }
         }
     }
-    ImageComparator comp = new ImageComparator();
-
-
-
 
     comp.ReferenceImage = args[0];
     comp.NewImage = args[1];
+    sOutputFile = args[2];
+#endif
+
+
     comp.Run(null, null);
 
-    using (StreamWriter swResult = new StreamWriter(args[2]))
+    using (StreamWriter swResult = new StreamWriter(sOutputFile))
     {
         foreach(Rectangle r in comp.Errors)
         {

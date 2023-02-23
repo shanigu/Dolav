@@ -22,6 +22,7 @@ namespace DetectLabelProblems
        
         //settings
         public static int ErrorDiffThreshold { get; set; }
+        public static int FilterSize { get; set; } //3 for large objects, 1 for small objects
         public static int MaxOffset { get; set; }
         public static int RectangleSize { get; set; }
         public static int BlackThreshold { get; set; }
@@ -32,6 +33,9 @@ namespace DetectLabelProblems
         public static bool ReferenceRectangleMarked { get; set; }
 
         public static bool AdjustBrightness { get; set; }
+
+        public static double ResizeFactor { get; set; }
+
 
         public ImageComparator()
         {
@@ -77,16 +81,31 @@ namespace DetectLabelProblems
             Directory.CreateDirectory(sPath);
 
             Console.WriteLine("Loading images");
-
+            //Loading the original bitmaps, reference and inspected
             Bitmap bmp1 = new Bitmap(sReferenceImage);
             Bitmap bmp2 = new Bitmap(sNewImage);
-            
+
+            //Resize images if needed, scaling down the resolution
+            if(ResizeFactor != 1.0)
+            {
+                bmp1 = new Bitmap(bmp1, new Size((int)(bmp1.Width * ResizeFactor), (int)(bmp1.Height * ResizeFactor)));
+                bmp2 = new Bitmap(bmp2, new Size((int)(bmp2.Width * ResizeFactor), (int)(bmp2.Height * ResizeFactor)));
+
+                if(ReferenceRectangleMarked)
+                {
+                    ReferenceRectangle = new Rectangle((int)(ReferenceRectangle.X * ResizeFactor), (int)(ReferenceRectangle.Y * ResizeFactor),
+                        (int)(ReferenceRectangle.Width * ResizeFactor), (int)(ReferenceRectangle.Height * ResizeFactor));
+                }
+            }
+
+            //using a wrapper for the Bitmap class that allows for fast access to the pixels
             DirectBitmap db1 = new DirectBitmap(bmp1);
             DirectBitmap db2 = new DirectBitmap(bmp2);
 
             DirectBitmap db1Adjusted = db1;
             DirectBitmap db2Adjusted = db2;
 
+            //If there is light from a specific corner, adjust the brightness of the entire picture accordingly
             if (AdjustBrightness)
             {
                 Console.WriteLine("Adjusting brightness");
@@ -97,7 +116,8 @@ namespace DetectLabelProblems
             }
 
 
-
+            //conver the bitmap to grayscale, this is done to ignore color variance
+            //here we also cur the reference rectangle - the part of the image that we want to focus on
             Console.WriteLine("Converting to grayscale");
             GrayBitmap gray1 = null;
             if(ReferenceRectangleMarked)
@@ -105,6 +125,7 @@ namespace DetectLabelProblems
             else
                  gray1 = new GrayBitmap(db1Adjusted);
             gray1.Save(sName + "original1.jpg");
+
             GrayBitmap gray2 = null;
             if (ReferenceRectangleMarked)
                 gray2 = new GrayBitmap(db2Adjusted, ReferenceRectangle);
@@ -112,7 +133,10 @@ namespace DetectLabelProblems
                 gray2 = new GrayBitmap(db2Adjusted);
             gray2.Save(sName + "original2.jpg");
 
-            Console.WriteLine("Smoothing and binarizng");
+
+            //now we smooth - replace each pixel with the median of its neighbors
+            //we also segment the image into 3 colors - black, white, and gray (neutral background color)
+            Console.WriteLine("Smoothing and binarizing");
             Pipeline pipeline1 = new Pipeline();
             pipeline1.WriteIntermediateImages = true;
             pipeline1.AddStep(gb => gb.SmoothMedian(SmoothingArea / 2), sName + "smoothed1.jpg");
@@ -129,6 +153,8 @@ namespace DetectLabelProblems
             gray2 = pipeline2.Output;
 
 
+
+            //we break the image into rectangles so that we can compare offsets on each rectangle independently
             Console.WriteLine("Splitting image to rectangles");
             List<GrayRect> lGrayRects1 = ComputeRects(gray1, RectangleSize);
             List<GrayRect> lGrayRects2 = ComputeRects(gray2, RectangleSize);
@@ -138,6 +164,7 @@ namespace DetectLabelProblems
             Console.WriteLine("Started comparing rectangles");
             for (int i = 0; i < lGrayRects1.Count; i++)
             {
+
                 GrayRect r1 = lGrayRects1[i];
                 GrayRect r2 = lGrayRects2[i];
 
@@ -154,32 +181,51 @@ namespace DetectLabelProblems
                         "Completed: " + iPercetage + "%, Errors: " + Errors.Count);
                 }
 
-
+                //we compute the offset between the rectangles
                 (int xBestOffset, int yBestOffset) = ComputeBestOffset(r1, r2, MaxOffset, out bool bValid);
                 if (!bValid)
                     continue;
+
+                //given the offset, we compute the diff - pixels which are different between the images
                 GrayRect rDiff = ComputeDiff(gray1, gray2, r1.XStart, r1.XStart + r1.Width,
                     r1.YStart, r1.YStart + r1.Height, xBestOffset, yBestOffset);
 
-                rDiff = rDiff.ErodeDilate(3, true);
-                rDiff = rDiff.ErodeDilate(3, false);
-                int cDiff = rDiff.CountNonZero();
+                
+                //we now use erosion and dilation to get rid of small differences - thin lines and small areas
+                GrayRect rDiffErode = rDiff.Erode(FilterSize);
+                GrayRect rDiffDilate = rDiffErode.Dilate(FilterSize);
+
+                //afterwards we comput the number of pixels that are truly different between the images
+                int cDiff = rDiffDilate.NonNeutralPoints.Count();
                 diffs[r1.XStart + "_" + r1.YStart] = cDiff;
+
+                //if the number of different pixels exceed a threshold we decide that this is an error that should be reported
                 if (cDiff > ErrorDiffThreshold)
                 {
                     rDiff.Save(sName + "diff" + r1.XStart + "_" + r1.YStart + ".jpg");
+                    rDiffErode.Save(sName + "diff" + r1.XStart + "_" + r1.YStart + ".erode.jpg");
+                    rDiffDilate.Save(sName + "diff" + r1.XStart + "_" + r1.YStart + ".dilate.jpg");
+                    //We now compute a rectangle that contains all the different pixels for reporting the error later
+                    Rectangle rBoundingBox = rDiffDilate.GetNonNeutralBoundingBox();
                     r1.Save(sName + "r1_" + r1.XStart + "_" + r1.YStart + ".jpg");
                     r2.Save(sName + "r2_" + r1.XStart + "_" + r1.YStart + ".jpg");
-                    Errors.Add(new Rectangle(r1.XStart + ReferenceRectangle.X, r1.YStart + ReferenceRectangle.Y, r1.Width, r1.Height));
+                    Errors.Add(rBoundingBox);
                 }
             }
             
             Console.WriteLine("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b" + "" +
                 "Completed: " + 100 + "%, Errors: " + Errors.Count);
             Console.WriteLine("Merging rectangles with errors");
+
+            //we now merge the rectnagles becasue several of them cover the same area
             Errors = Merge(Errors);
             Console.WriteLine("Done comparing images, detected " + Errors.Count + " problematic areas"); 
             
+            foreach(Rectangle r in Errors)
+            {
+                db2.DrawRectangle(r);
+            }
+            db2.Bitmap.Save(sName + "result.jpg");
 
             bmp1.Dispose();
             bmp2.Dispose();
@@ -282,8 +328,13 @@ namespace DetectLabelProblems
                     if (c1 > -1 && c2 > -1)
                     {
                         int iSumDiff = Math.Abs(c1 - c2);
-                        dbDiff.SetPixel(x - XStart, y - YStart, iSumDiff);
+                        if(iSumDiff < 50)
+                            dbDiff.SetPixel(x - XStart, y - YStart, NEUTRAL);
+                        else
+                            dbDiff.SetPixel(x - XStart, y - YStart, 0);
                     }
+                    else
+                        dbDiff.SetPixel(x - XStart, y - YStart, NEUTRAL);
                 }
             }
             return dbDiff;
@@ -326,7 +377,6 @@ namespace DetectLabelProblems
             return (xBestOffset, yBestOffset);
         }
 
-
         private double ComputeDistance(GrayRect gray1, GrayRect gray2, int xOffest, int yOffset)
         {
             double dSumDistances = 0.0;
@@ -360,27 +410,33 @@ namespace DetectLabelProblems
             return dSumDistances / cValidPixels;
         }
 
+        public GrayRect CreateCopy(GrayBitmap gray, int XStart, int YStart, int iSize)
+        {
+            GrayRect rect = new GrayRect(iSize);
+
+            rect.XStart = XStart;
+            rect.YStart = YStart;
+            for (int x = 0; x < iSize; x++)
+            {
+                for (int y = 0; y < iSize; y++)
+                {
+                    if (XStart + x < gray.Width && YStart + y < gray.Height)
+                        rect[x, y] = gray.GetPixel(XStart + x, YStart + y);
+                }
+            }
+            return rect;
+        }
 
         private List<GrayRect> ComputeRects(GrayBitmap gray, int iSize)
         {
             List<GrayRect> lRects = new List<GrayRect>();
-            for (int i = 0; i < gray.Width - iSize; i += iSize / 2)
+            GrayRect rect = null;
+            for (int i = 0; i < gray.Width; i += iSize / 2)
             {
-                for (int j = 0; j < gray.Height - iSize; j += iSize / 2)
+                for (int j = 0; j < gray.Height; j += iSize / 2)
                 {
 
-                    GrayRect rect = new GrayRect(iSize);
-                    
-                    rect.XStart = i;
-                    rect.YStart = j;
-                    for (int x = 0; x < iSize; x++)
-                    {
-                        for (int y = 0; y < iSize; y++)
-                        {
-                            if (i + x < gray.Width && j + y < gray.Height)
-                                rect[x, y] = gray.GetPixel(i + x, j + y);
-                        }
-                    }
+                    rect = new GrayRect(gray, i, j, iSize);
                     lRects.Add(rect);
                 }
             }
@@ -389,6 +445,256 @@ namespace DetectLabelProblems
 
 
         public class GrayRect
+        {
+            public bool Static;
+            public int[,] Pixels;
+            GrayBitmap FullImage;
+            public int Width, Height;
+            public int XStart, YStart;
+            public List<Point> NonNeutralPoints;
+
+            public int this[int i, int j]
+            {
+                get
+                {
+
+                    return GetPixel(i, j);
+                }
+                set
+                {
+                    SetPixel(i, j, value);
+                }
+            }
+            public GrayRect(int iSize)
+            {
+                Static = false;
+                Width = Height = iSize;
+                Pixels = new int[iSize, iSize];
+                FullImage = null;
+                NonNeutralPoints = new List<Point>();
+                for (int x = 0; x < Width; x++)
+                {
+                    for (int y = 0; y < Height; y++)
+                    {
+                        SetPixel(x, y, NEUTRAL);
+                    }
+                }
+            }
+            public GrayRect(GrayBitmap image, int iXStart, int iYStart, int iSize)
+            {
+                Static = true;
+                Width = Height = iSize;
+                FullImage = image;
+                Pixels = null;
+                XStart = iXStart; 
+                YStart = iYStart;
+                ComputeNonNeutralPoints();
+            }
+
+
+            private void ComputeNonNeutralPoints()
+            {
+                if (Static)
+                {
+                    NonNeutralPoints = new List<Point>();
+                    for (int x = 0; x < Width; x++)
+                    {
+                        for (int y = 0; y < Height; y++)
+                        {
+                            int c = GetPixel(x, y);
+                            if(c != NEUTRAL)
+                                NonNeutralPoints.Add(new Point(x, y));
+                        }
+                    }
+                }
+            }
+
+            public void SetPixel(int i, int j, int c)
+            {
+                if (Static)
+                {
+                    throw new InvalidOperationException();
+                }
+                else
+                {
+                    if (i >= 0 && j >= 0 && i < Width && j < Height)
+                    {
+                        Pixels[i, j] = c;
+                        Point p = new Point(i, j);
+                        if (c != GrayBitmap.NEUTRAL)
+                            NonNeutralPoints.Add(p);
+                        else
+                            NonNeutralPoints.Remove(p);
+                    }
+                }
+            }
+            public int GetPixel(int i, int j)
+            {
+                if (Static)
+                {
+                    int x = XStart + i, y = YStart + j;
+                    if (x < 0 || x >= FullImage.Width || y < 0 || y >= FullImage.Height)
+                        return GrayBitmap.NEUTRAL;
+                    return FullImage.GetPixel(x, y);
+                }
+                else
+                {
+                    if (i < 0 || i >= Width || j < 0 || j >= Height)
+                        return GrayBitmap.NEUTRAL;
+                    return Pixels[i, j];
+                }
+            }
+
+            public GrayRect Convolution(double[,] kernel, bool bReplaceBlackWithNeutral)
+            {
+                int iSize = kernel.GetLength(0) / 2;
+                GrayRect gr = new GrayRect(Width);
+                for (int x = iSize; x < Width; x++)
+                {
+                    for (int y = iSize; y < Height; y++)
+                    {
+                        if (x >= iSize && y >= iSize && x < Width - iSize && y < Height - iSize)
+                        {
+                            double dSum = 0.0;
+                            for (int i = -iSize; i <= iSize; i++)
+                            {
+                                for (int j = -iSize; j <= iSize; j++)
+                                {
+                                    dSum += GetPixel(x + i, y + j) * kernel[i + iSize, j + iSize];
+                                }
+                            }
+                            if (bReplaceBlackWithNeutral && dSum == 0)
+                                dSum = NEUTRAL;
+                            gr.SetPixel(x, y, (int)dSum);
+                        }
+                        else
+                            gr.SetPixel(x, y, NEUTRAL);
+                    }
+                }
+                return gr;
+            }
+            public GrayRect Sharpen()
+            {
+                double[,] kernel = new double[,] { { -1, -1, -1 }, { -1, 9, -1 }, { -1, -1, -1 } };
+                return Convolution(kernel, false);
+            }
+
+            public void Save(string sFileName)
+            {
+                Bitmap bmp = new Bitmap(Width, Height);
+                for (int x = 0; x < Width; x++)
+                {
+                    for (int y = 0; y < Height; y++)
+                    {
+                        int iGray = GetPixel(x,y);
+                        if (iGray > 255)
+                            iGray = 255;
+                        if (iGray < 0)
+                            iGray = 0;
+                        Color c = Color.FromArgb(iGray, iGray, iGray);
+                        bmp.SetPixel(x, y, c);
+                    }
+                }
+                bmp.Save(sFileName);
+                bmp.Dispose();
+
+            }
+
+            public GrayRect Erode(int iSize)
+            {
+                GrayRect gr = new GrayRect(Width);
+                gr.XStart = XStart; gr.YStart = YStart;
+                foreach (Point p in NonNeutralPoints)
+                {
+                    bool bNeutralNeighbor = false;
+                    for (int i = -iSize; i <= iSize && !bNeutralNeighbor; i++)
+                    {
+                        for (int j = -iSize; j <= iSize && !bNeutralNeighbor; j++)
+                        {
+                            int c = GetPixel(p.X + i, p.Y + j);
+                            if (c == NEUTRAL)
+                                bNeutralNeighbor = true;
+                        }
+                    }
+                    int cCurrent = GetPixel(p.X, p.Y);
+                    if (!bNeutralNeighbor)
+                        gr.SetPixel(p.X, p.Y, cCurrent);
+                }
+                return gr;
+            }
+
+
+            public GrayRect Dilate(int iSize)
+            {
+                GrayRect gr = new GrayRect(Width);
+                gr.XStart = XStart; gr.YStart = YStart;
+
+                foreach (Point p in NonNeutralPoints)
+                {
+                    int c = GetPixel(p.X, p.Y);
+                    for (int i = -iSize; i <= iSize; i++)
+                    {
+                        for (int j = -iSize; j <= iSize; j++)
+                        {
+                            gr.SetPixel(p.X + i, p.Y + j, c);
+                        }
+                    }
+                }
+                return gr;
+            }
+
+            public int CountNonZero()
+            {
+                int cPixels = 0;
+                for (int x = 0; x < Width; x++)
+                {
+                    for (int y = 0; y < Height; y++)
+                    {
+                        if (GetPixel(x, y) > 0)
+                            cPixels++;
+                    }
+                }
+                return cPixels;
+            }
+
+            public int CountInsidePoints(int iEdge)
+            {
+                int cPoints = 0;
+                foreach (Point p in NonNeutralPoints)
+                {
+                    if (p.X > iEdge && p.Y > iEdge && p.X < Width - iEdge && p.Y < Height - iEdge)
+                        cPoints++;
+                }
+                return cPoints;
+            }
+
+            public Rectangle GetNonNeutralBoundingBox()
+            {
+                int iMinX = int.MaxValue;
+                int iMaxX = 0;
+                int iMinY = int.MaxValue;
+                int iMaxY = 0;
+                foreach (Point p in NonNeutralPoints)
+                {
+                    if (p.X > iMaxX)
+                        iMaxX = p.X;
+                    if (p.X < iMinX)
+                        iMinX = p.X;
+                    if (p.Y > iMaxY)
+                        iMaxY = p.Y;
+                    if (p.Y < iMinY)
+                        iMinY = p.Y;
+                }
+                if (ReferenceRectangleMarked)
+                    return new Rectangle(iMinX + XStart + ReferenceRectangle.X, iMinY + YStart + ReferenceRectangle.Y, iMaxX - iMinX, iMaxY - iMinY);
+                else
+                    return new Rectangle(iMinX + XStart, iMinY + YStart, iMaxX - iMinX, iMaxY - iMinY);
+            }
+        }
+
+
+
+        public class GrayRect2
         {
             public int[,] Pixels;
             public int Width, Height;
@@ -407,7 +713,7 @@ namespace DetectLabelProblems
                     SetPixel(i, j, value);
                 }
             }
-            public GrayRect(int iSize)
+            public GrayRect2(int iSize)
             {
                 Width = Height = iSize;
                 Pixels = new int[iSize, iSize];
