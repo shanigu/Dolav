@@ -22,12 +22,14 @@ try
 
     ImageComparator comp = new ImageComparator();
 
+    /*
 #if (DEBUG)
     comp.ReferenceImage = "D:\\Local\\Dolav\\2023-02-21\\00-12-12\\Image_001.jpg";
     comp.NewImage = "D:\\Local\\Dolav\\2023-02-21\\01-13-15\\Image_001.jpg";
     sOutputFile = "D:\\Local\\Dolav\\2023-02-21\\01-13-15\\results.txt";
 
 #else
+    */
     if (args.Length < 3)
     {
         Console.WriteLine("Usage: DetectLabelProblems reference_image inspected_image result_file [config_file]");
@@ -109,7 +111,7 @@ try
     comp.ReferenceImage = args[0];
     comp.NewImage = args[1];
     sOutputFile = args[2];
-#endif
+//#endif
 
 
     comp.Run(null, null);
